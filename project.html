@@ -1,0 +1,63 @@
+<style>
+  .project-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    padding: 1rem;
+  }
+
+  .project-card {
+    flex: 0 0 80%;
+    max-width: 300px;
+    background: #f2f2f2;
+    padding: 1rem;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .project-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hide scrollbar (optional) */
+  .project-container::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+<div class="project-container">
+  <div class="project-card">
+    <img src="project1.jpg" alt="Project 1">
+    <h3>Project Title 1</h3>
+    <p>Short description of project.</p>
+    <a href="#">View Project</a>
+  </div>
+
+  <div class="project-card">
+    <img src="project2.jpg" alt="Project 2">
+    <h3>Project Title 2</h3>
+    <p>Another project summary.</p>
+    <a href="#">View Project</a>
+  </div>
+  <div class="project-card">
+    <img src="project3.jpg" alt="Project 3">
+    <h3>Project Title 3</h3>
+    <p>Third project info goes here.</p>
+    <a href="#">View Project</a>
+  </div>
+</div>
