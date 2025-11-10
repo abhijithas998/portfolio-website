@@ -22,7 +22,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Six+Caps&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.cdnfonts.com/css/pixcoose" rel="stylesheet" />
+
     <title>Document</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/pixcoose");
+    </style>
+
     <style>
       * {
         margin: 0%;
@@ -41,13 +47,15 @@
       }
 
       header {
+        font-family: "pixcoose", sans-serif;
+
         bottom: 1px solid grey;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
         height: 15%;
         /* background-color: violet; */
         position: fixed;
-    
+
         z-index: 1000;
         width: 100%;
         display: flex;
@@ -73,12 +81,15 @@
         /* background-color: lavender; */
         font-size: 70px;
         font-weight: 300;
-        color: #6e6e6e;
+        color: black;
+        display: flex;
+        align-items: center;
       }
 
       .navright {
         height: 100%;
         width: 40%;
+
         /* background-color: red; */
         font-size: 30px;
         font-weight: 200;
@@ -90,7 +101,7 @@
 
       .navright a {
         text-decoration: none;
-        color: #6e6e6e;
+        color: black;
         transition: 2s;
       }
 
@@ -500,6 +511,8 @@
 
       /* Heading style */
       .about-header h1 {
+        font-family: "pixcoose", sans-serif;
+
         color: #6e6e6e;
         font-size: 42px;
         font-weight: 700;
@@ -620,6 +633,8 @@
         margin: 0 auto 36px;
       }
       .skills-header h1 {
+        font-family: "pixcoose", sans-serif;
+
         color: #6e6e6e;
         font-size: 36px;
         font-weight: 700;
@@ -742,6 +757,8 @@
         color: #797777;
       }
       .page3toptop {
+        font-family: "pixcoose", sans-serif;
+
         display: flex;
         justify-content: center;
         height: 30%;
@@ -811,210 +828,221 @@
         /* background-color: aqua; */
       }
       /* ==================== EDUCATION SECTION ==================== */
-.education-section {
-  background: #e6e6e6;
-  padding: 100px 5%;
-  position: relative;
-  overflow: hidden;
-}
+      .education-section {
+        background: #e6e6e6;
+        padding: 100px 5%;
+        position: relative;
+        overflow: hidden;
+      }
 
-/* Heading */
-.education-header {
-  text-align: center;
-  margin-bottom: 70px;
-}
+      /* Heading */
+      .education-header {
+        font-family: "pixcoose", sans-serif;
 
-.education-header h1 {
-  font-size: 42px;
-  color: #6e6e6e;
-  font-weight: 700;
-  position: relative;
-  display: inline-block;
-}
+        text-align: center;
+        margin-bottom: 70px;
+      }
 
-.education-header h1::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: greenyellow;
-  border-radius: 10px;
-  animation: glow 2s infinite alternate;
-}
+      .education-header h1 {
+        font-size: 42px;
+        color: #6e6e6e;
+        font-weight: 700;
+        position: relative;
+        display: inline-block;
+      }
 
-@keyframes glow {
-  from { box-shadow: 0 0 8px greenyellow; }
-  to { box-shadow: 0 0 20px greenyellow; }
-}
+      .education-header h1::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: greenyellow;
+        border-radius: 10px;
+        animation: glow 2s infinite alternate;
+      }
 
-/* Timeline Layout */
-.timeline {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 8px greenyellow;
+        }
+        to {
+          box-shadow: 0 0 20px greenyellow;
+        }
+      }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(greenyellow, #6e6e6e);
-  border-radius: 10px;
-}
+      /* Timeline Layout */
+      .timeline {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
 
-/* Timeline Items */
-.timeline-item {
-  width: 50%;
-  padding: 20px 40px;
-  position: relative;
-}
+      .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(greenyellow, #6e6e6e);
+        border-radius: 10px;
+      }
 
-.timeline-item.left {
-  left: 0;
-  text-align: right;
-}
+      /* Timeline Items */
+      .timeline-item {
+        width: 50%;
+        padding: 20px 40px;
+        position: relative;
+      }
 
-.timeline-item.right {
-  left: 50%;
-}
+      .timeline-item.left {
+        left: 0;
+        text-align: right;
+      }
 
-.content-box {
-  background: linear-gradient(145deg, #fafafa, #d9d9d9);
-  border-radius: 20px;
-  padding: 30px 25px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  position: relative;
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
+      .timeline-item.right {
+        left: 50%;
+      }
 
-.content-box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-}
+      .content-box {
+        background: linear-gradient(145deg, #fafafa, #d9d9d9);
+        border-radius: 20px;
+        padding: 30px 25px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        position: relative;
+        animation: fadeInUp 1s ease forwards;
+        opacity: 0;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
 
-/* Connector dots */
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  width: 20px;
-  height: 20px;
-  background: greenyellow;
-  border-radius: 50%;
-  z-index: 1;
-}
+      .content-box:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      }
 
-.timeline-item.left::before {
-  right: -10px;
-}
+      /* Connector dots */
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        width: 20px;
+        height: 20px;
+        background: greenyellow;
+        border-radius: 50%;
+        z-index: 1;
+      }
 
-.timeline-item.right::before {
-  left: -10px;
-}
+      .timeline-item.left::before {
+        right: -10px;
+      }
 
-/* Content inside box */
-.content-box img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  border-radius: 12px;
-  margin: 10px auto 20px;
-  display: block;
-}
+      .timeline-item.right::before {
+        left: -10px;
+      }
 
-.content-box h2 {
-  font-size: 20px;
-  color: #6e6e6e;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
+      /* Content inside box */
+      .content-box img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 12px;
+        margin: 10px auto 20px;
+        display: block;
+      }
 
-.content-box h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 8px;
-}
+      .content-box h2 {
+        font-size: 20px;
+        color: #6e6e6e;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
 
-.content-box p {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
+      .content-box h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #444;
+        margin-bottom: 8px;
+      }
 
-.content-box .year {
-  display: inline-block;
-  font-size: 14px;
-  color: #6e6e6e;
-  background: greenyellow;
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-weight: 600;
-}
+      .content-box p {
+        font-size: 15px;
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
 
-/* Animation */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+      .content-box .year {
+        display: inline-block;
+        font-size: 14px;
+        color: #6e6e6e;
+        background: greenyellow;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-weight: 600;
+      }
 
-/* ------------------ RESPONSIVE DESIGN ------------------ */
-@media (max-width: 900px) {
-  .timeline::before {
-    left: 20px;
-  }
+      /* Animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-  .timeline-item {
-    width: 100%;
-    padding-left: 60px;
-    padding-right: 20px;
-    margin-bottom: 40px;
-  }
+      /* ------------------ RESPONSIVE DESIGN ------------------ */
+      @media (max-width: 900px) {
+        .timeline::before {
+          left: 20px;
+        }
 
-  .timeline-item.left,
-  .timeline-item.right {
-    text-align: left;
-    left: 0;
-  }
+        .timeline-item {
+          width: 100%;
+          padding-left: 60px;
+          padding-right: 20px;
+          margin-bottom: 40px;
+        }
 
-  .timeline-item::before {
-    left: 10px;
-  }
+        .timeline-item.left,
+        .timeline-item.right {
+          text-align: left;
+          left: 0;
+        }
 
-  .content-box img {
-    max-width: 200px;
-  }
-}
+        .timeline-item::before {
+          left: 10px;
+        }
 
-@media (max-width: 600px) {
-  .education-section {
-    padding: 70px 5%;
-  }
-  .education-header h1 {
-    font-size: 32px;
-  }
-  .content-box {
-    padding: 25px 20px;
-  }
-  .content-box h2 {
-    font-size: 18px;
-  }
-  .content-box p {
-    font-size: 14px;
-  }
-}
+        .content-box img {
+          max-width: 200px;
+        }
+      }
 
+      @media (max-width: 600px) {
+        .education-section {
+          padding: 70px 5%;
+        }
+        .education-header h1 {
+          font-size: 32px;
+        }
+        .content-box {
+          padding: 25px 20px;
+        }
+        .content-box h2 {
+          font-size: 18px;
+        }
+        .content-box p {
+          font-size: 14px;
+        }
+      }
 
       /* -----------------------------------page5------------------------------ */
       .page5 {
@@ -1029,6 +1057,8 @@
       }
 
       .page5top {
+        font-family: "pixcoose", sans-serif;
+
         font-size: large;
         font-weight: 600;
         color: #797777;
@@ -1197,28 +1227,26 @@
         }
       }
       @media (max-width: 600px) {
-  .about-section,
-  .education-section,
-  .page5 {
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
-  }
+        .about-section,
+        .education-section,
+        .page5 {
+          padding-top: 40px !important;
+          padding-bottom: 40px !important;
+        }
 
-  .about-header h1,
-  .education-header h1,
-  .page5top h1 {
-    margin-bottom: 25px;
-    font-size: 28px;
-  }
-}
-@media (max-width: 600px) {
-  .page5bottom {
-     
-    width: 60%;
-    padding: 5px;
-  }
-}
-
+        .about-header h1,
+        .education-header h1,
+        .page5top h1 {
+          margin-bottom: 25px;
+          font-size: 28px;
+        }
+      }
+      @media (max-width: 600px) {
+        .page5bottom {
+          width: 60%;
+          padding: 5px;
+        }
+      }
     </style>
   </head>
 
@@ -1387,35 +1415,40 @@
       </div>
     </div>
     <!-- ==================== EDUCATION SECTION ==================== -->
-<section id="edu" class="education-section">
-  <div class="education-header">
-    <h1>Education</h1>
-  </div>
-
-  <div class="timeline">
-    <!-- School -->
-    <div class="timeline-item left">
-      <div class="content-box">
-        <h2>Schooling</h2>
-        <img src="stmarys.jpg" alt="St Marys HSS" />
-        <h3>St. Mary’s HSS Pattom</h3>
-        <p>Completed Higher Secondary Education with focus on Science Stream</p>
-        <span class="year">– 2018</span>
+    <section id="edu" class="education-section">
+      <div class="education-header">
+        <h1>Education</h1>
       </div>
-    </div>
 
-    <!-- College -->
-    <div class="timeline-item right">
-      <div class="content-box">
-        <h2>Graduation</h2>
-        <img src="OIP.webp" alt="University College of Engineering Kariavattom" />
-        <h3>University College of Engineering Kariavattom</h3>
-        <p>Bachelor of Technology in Computer Science and Engineering</p>
-        <span class="year">2021 – 2025</span>
+      <div class="timeline">
+        <!-- School -->
+        <div class="timeline-item left">
+          <div class="content-box">
+            <h2>Schooling</h2>
+            <img src="stmarys.jpg" alt="St Marys HSS" />
+            <h3>St. Mary’s HSS Pattom</h3>
+            <p>
+              Completed Higher Secondary Education with focus on Science Stream
+            </p>
+            <span class="year">– 2018</span>
+          </div>
+        </div>
+
+        <!-- College -->
+        <div class="timeline-item right">
+          <div class="content-box">
+            <h2>Graduation</h2>
+            <img
+              src="OIP.webp"
+              alt="University College of Engineering Kariavattom"
+            />
+            <h3>University College of Engineering Kariavattom</h3>
+            <p>Bachelor of Technology in Computer Science and Engineering</p>
+            <span class="year">2021 – 2025</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <div class="page5">
       <div class="page5top">
